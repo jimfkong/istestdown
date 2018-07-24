@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is test down?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <script type="text/javascript" src="javascript/checkServerStatus.js"></script>
+        <script type="text/javascript" src="javascript/onLoad.js"></script>
+    </head>
+    <body style="overflow: hidden" >
+        <script type="text/javascript">
+            window.onload = function() {
+                checkServerStatus();
+            }
+        </script>
+        <div class="bgimg"></div>
+        <div class="topmiddle">
+            <h2>Is Test Down?</h2>
+        </div>
+        <div class=centered>
+            <div id="loader" class="loader" style="display:block"></div>
+            <div id="upOrDown" style="display:none">
+                <h1>YES</h1>
+            </div>
+        </div>
+        <div class="bottommiddle" style="display:block">
+            <h3 id="status">Contacting server...</h3>
+        </div>
+    </body>
+</html>
