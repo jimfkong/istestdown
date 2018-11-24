@@ -1,63 +1,67 @@
-body, h1, h2 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #404040;
-    -webkit-text-fill-color: #fefefe;
-    -webkit-text-stroke-color: #404040;
+.is-test-down {
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.is-test-down::before {
+  content: ' ';
+  background-image: url(images/background.jpg);
+  filter: blur(5px);
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.15);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
-h1 {
-    font-size: 750%;
-    -webkit-text-stroke-width: 2px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
-h2 {
-    font-size: 400%;
-    -webkit-text-stroke-width: 2px;
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
-h3 {
-    font-size: 100%;
-    -webkit-text-stroke-width: 0.1px;
+
+.text {
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-.loader{
-    border: 16px solid #fefefe;
-    border-top: 16px solid #404040;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+
+.spinner {
+  border: 16px solid #fefefe;
+  border-top: 16px solid #404040;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
-@keyframes spin{
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
-body, html {
-    height: 100%;
-    margin: 0;
+
+.up-or-down {
+  font-size: 4rem;
+  text-align: center;
 }
-.bgimg {
-    background-image: url(images/background.jpg);
-    filter: blur(5px);
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    transform: scale(1.1);
-    overflow: hidden;
-}
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.topmiddle {
-    position: fixed;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -25%);;
-}
-.bottommiddle{
-    position: fixed;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -25%);;
+
+.server-message {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }

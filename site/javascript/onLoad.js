@@ -1,5 +1,5 @@
 function onLoad(){
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("upOrDown").style.display = "block";
-    document.getElementById("status").textContent = "Error: 500 Internal Server Error"
+    document.getElementById("spinner").style.display = "none";
+    document.getElementById("status").style.display = "block";
+    document.getElementById("server-message").textContent = "Error: 500 Internal Server Error"
 }
